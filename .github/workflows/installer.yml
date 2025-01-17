@@ -13,7 +13,7 @@ jobs:
               uses: actions/checkout@v4
               with:
                 repository: 'PathOfBuildingCommunity/PathOfBuilding-Installer'
-                ref: 'd8cf649c559158c0e609465c5c62840e3ab71f3e'
+                ref: 'gh_actions_debugging'
                 ssh-key: '${{ secrets.POB_INSTALLER_KEY }}'
             - name: Create installer
               run: 'python3 make_release.py --game-version 2'
